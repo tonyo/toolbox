@@ -11,6 +11,7 @@ RUN apk add \
     bind-tools \
     busybox-extras \
     ca-certificates \
+    conntrack-tools \
     curl \
     htop \
     iftop \
