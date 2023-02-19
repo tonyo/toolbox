@@ -20,6 +20,7 @@ RUN apk add \
     mtr \
     nmap \
     nmap-ncat \
+    procps \
     strace \
     tcpdump \
     tree \
