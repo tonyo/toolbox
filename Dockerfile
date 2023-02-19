@@ -1,5 +1,10 @@
 FROM alpine:3.17
 
+LABEL org.opencontainers.image.source=https://github.com/tonyo/toolbox
+LABEL org.opencontainers.image.url=https://github.com/tonyo/toolbox
+LABEL org.opencontainers.image.description="Container image with a bunch of debugging tools"
+LABEL org.opencontainers.image.licenses=MIT
+
 RUN apk add \
     apache2-utils \
     bash \
