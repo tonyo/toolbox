@@ -28,6 +28,8 @@ RUN apk add \
     yq \
     --no-cache
 
+COPY sleep-wait /usr/local/bin/sleep-wait
+
 WORKDIR /root
 
 ENTRYPOINT [ "/bin/bash" ]
