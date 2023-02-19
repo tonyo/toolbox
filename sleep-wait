@@ -2,7 +2,21 @@
 ### A simple script that runs forever
 set -euxo pipefail
 
-while true; do
-  date
-  sleep 60
-done
+run-forever() {
+  while true; do
+    date
+    sleep 60
+  done
+}
+
+# Some voodoo to pass shutdown signals properly
+cleanup() {
+  kill "${pid}"
+  exit
+}
+trap cleanup SIGHUP SIGTERM SIGINT
+
+run-forever &
+
+pid=$!
+wait "$pid"
