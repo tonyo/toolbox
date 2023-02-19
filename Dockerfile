@@ -31,6 +31,9 @@ RUN apk add \
 
 COPY sleep-wait /usr/local/bin/sleep-wait
 
+# Just in case
+RUN ln -s /usr/local/bin/sleep-wait /usr/local/bin/wait-sleep
+
 WORKDIR /root
 
 ENTRYPOINT [ "/bin/bash" ]
