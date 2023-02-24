@@ -1,7 +1,11 @@
 # toolbox
 
 <a href="https://hub.docker.com/r/tonyo/toolbox">
-<img src="https://img.shields.io/docker/image-size/tonyo/toolbox?label=Image%20Size"></img>
+<img src="https://img.shields.io/docker/image-size/tonyo/toolbox?arch=amd64&label=linux%2Famd64"></img>
+</a>
+
+<a href="https://hub.docker.com/r/tonyo/toolbox">
+<img src="https://img.shields.io/docker/image-size/tonyo/toolbox?arch=arm64&label=linux%2Farm64"></img>
 </a>
 
 <br />
