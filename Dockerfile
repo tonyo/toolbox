@@ -15,6 +15,7 @@ RUN apk add \
     curl \
     htop \
     iftop \
+    iproute2 \
     jq \
     ltrace \
     mtr \
