@@ -1,4 +1,4 @@
-FROM alpine:3.17
+FROM alpine:3.20
 
 LABEL org.opencontainers.image.source=https://github.com/tonyo/toolbox
 LABEL org.opencontainers.image.url=https://github.com/tonyo/toolbox
@@ -13,6 +13,7 @@ RUN apk add \
     ca-certificates \
     conntrack-tools \
     curl \
+    fzf \
     htop \
     iftop \
     iproute2 \
@@ -22,6 +23,7 @@ RUN apk add \
     nmap \
     nmap-ncat \
     procps \
+    ripgrep \
     strace \
     tcpdump \
     tree \
@@ -32,8 +34,11 @@ RUN apk add \
 
 COPY sleep-wait /usr/local/bin/sleep-wait
 
-# Just in case
+# Just in case: symlink sleep-wait
 RUN ln -s /usr/local/bin/sleep-wait /usr/local/bin/wait-sleep
+
+# Initialize "fzf"
+RUN echo 'eval "$(fzf --bash)"' >> /etc/bash/bashrc
 
 WORKDIR /root
 
