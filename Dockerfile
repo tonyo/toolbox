@@ -22,8 +22,10 @@ RUN apk add \
     mtr \
     nmap \
     nmap-ncat \
+    postgresql-client \
     procps \
     ripgrep \
+    sqlite \
     strace \
     tcpdump \
     tree \
