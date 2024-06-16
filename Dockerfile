@@ -8,6 +8,7 @@ LABEL org.opencontainers.image.licenses=MIT
 RUN apk add \
     apache2-utils \
     bash \
+    bat \
     bind-tools \
     busybox-extras \
     ca-certificates \
@@ -20,6 +21,7 @@ RUN apk add \
     jq \
     ltrace \
     mtr \
+    nano \
     nmap \
     nmap-ncat \
     postgresql-client \
