@@ -27,6 +27,7 @@ RUN apk add \
     postgresql-client \
     procps \
     ripgrep \
+    socat \
     sqlite \
     strace \
     tcpdump \
