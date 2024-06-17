@@ -5,11 +5,14 @@ LABEL org.opencontainers.image.url=https://github.com/tonyo/toolbox
 LABEL org.opencontainers.image.description="Container image with a bunch of debugging tools"
 LABEL org.opencontainers.image.licenses=MIT
 
+ENV LANG=en_US.UTF-8
+
 RUN apk add \
     apache2-utils \
     bash \
     bat \
     bind-tools \
+    btop \
     busybox-extras \
     ca-certificates \
     conntrack-tools \
